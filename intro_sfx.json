@@ -1,0 +1,260 @@
+[
+  {
+    "question_id": "1",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": null,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "the actual question",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact OR regex",
+            "answer": "the ans"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "how many points?",
+            "hint": "give them a hint",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Navigate to the Alerts tab, Type �e-commerce� into the string search field. What is the name of the alert?",
+        "answer_guidance": "Copy the name of the detector from the \"Detector Name\" column",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "TMI-SRE E-Commerce - Outlier Disk Usage detector"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Using the �severity circles� at the top of the page, what is the severity of this alert?",
+        "answer_guidance": "Using the �severity circles\"",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "Minor"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "In the Alert Message, there�s metadata in the �Next Steps� section which helps us understand more about the specifics of this alert. Which host is impacted by the active alert?",
+        "answer_guidance": "For the first 7 questions, you�ll need to navigate to the alert page located in the top navigation bar.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "tmihost11"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the detector (Explore Further -> Open Detector), and then edit the Detector Rule (blue �Edit� button on the right). What �Alert Condition� is being utilized here?",
+        "answer_guidance": "For the first 7 questions, you�ll need to navigate to the alert page located in the top navigation bar.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Outlier Detection"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Navigate to �4. Alert Settings�. Click �Show advanced settings�. What is the value of �Trigger Threshold�?",
+        "answer_guidance": "",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "3.5"
+          }
+        ],
+        "hints": []
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "(multiple choice?) What does this threshold value represent? (hint, tooltip)\nA. The number of times this detector has fired in the past day \nB. The number of deviations that one signal must differ from the rest of the population for this detector to trigger an alert (�deviations from norm�)\nC. The count of customers included in this alert \nD. The number of heartbeat checks that fail before this detector will trigger an alert",
+        "answer_guidance": "For the first 7 questions, you�ll need to navigate to the alert page located in the top navigation bar.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "B"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "title": "Intro To Splunk Infrastructure Monitoring",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Lets take a guided walk-through from the voice of brightest Obersvability minds into our Splunk Infrastructure Monitoring Platform and corresponding capabilies",
+    "base_point_value": 200,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "(multiple choice?) Modify the value of the �Trigger Threshold� to �2� and the �Clear Threshold to �1.5� (the error message will let you know why). The �Preview� will run. What is the preview used for? \nA. Back-testing the alert using historical data to better understand detector behavior (when does it fire, when does it clear, will it catch a condition seen recently?)\nB. To check the weather. \nC. To determine when something is bad\nD. To find the root cause of an issue",
+        "answer_guidance": "For the first 7 questions, you�ll need to navigate to the alert page located in the top navigation bar.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "A"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "title": "Navigating Splunk Infrastructure Monitoring using dashboards/charts",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Now that you are familiar with basic navigation in Splunk Infrastructure Monitoring, It's time to dive in a bit more and look around.",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the �Average Host CPU� chart to edit by clicking on the name of the chart. What is the �metric name� or the name of the �signal�?",
+        "answer_guidance": "For this question you will use the \"TMI Overview\" Dashboard Group to find the answers. You will modify charts, but since these have been write-protected (ie. they�re �read only�) you won�t be able to save the modified charts. Don�t worry, you�ll just use them to answer the questions.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "cpu.utilization"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "title": "Navigating Splunk Infrastructure Monitoring using dashboards/charts",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Now that you are familiar with basic navigation in Splunk Infrastructure Monitoring, It's time to dive in a bit more and look around.",
+    "base_point_value": 100,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What is the name of the F(x) that is being applied to the signal?",
+        "answer_guidance": "For this question you will use the \"TMI Overview\" Dashboard Group to find the answers. You will modify charts, but since these have been write-protected (ie. they�re �read only�) you won�t be able to save the modified charts. Don�t worry, you�ll just use them to answer the questions.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "mean"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "title": "Navigating Splunk Infrastructure Monitoring using dashboards/charts",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Now that you are familiar with basic navigation in Splunk Infrastructure Monitoring, It's time to dive in a bit more and look around.",
+    "base_point_value": 200,
+    "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Remove the F(x) that is currently applied to the signal. Apply a �Count� analytics function F(x) instead. This counts the number of Metric Timeseries which are actively reporting for this metric. The chart now answers the following question- How many hosts are present in this environment?",
+        "answer_guidance": "For this question you will use the \"TMI Overview\" Dashboard Group to find the answers. You will modify charts, but since these have been write-protected (ie. they�re �read only�) you won�t be able to save the modified charts. Don�t worry, you�ll just use them to answer the questions.",
+        "learning_objective": "Splunk Infrastructure Monitoring (SFx)",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "12"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  }
+]

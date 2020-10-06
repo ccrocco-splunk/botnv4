@@ -1,0 +1,364 @@
+[
+  {
+    "question_id": "1",
+    "title": "Navigation of the ITSI Service Analyzer tree view",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 100,
+    "learning_objective": "what we want them to learn",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "ITSI can incorporate business and non-infrastructure related KPI's so you can see how technical services impact business performance. What is the name of the ITSI service used to determine if customers of the StreamR Service are happy?",
+        "answer_guidance": "The name of the service",
+        "learning_objective": "what we want them to learn",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Customer Experience"
+          },
+          {
+            "match_type": "exact",
+            "answer": "StreamR Customer Experience"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Nudge - What part of ITSI shows all of the services that are active?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "30",
+            "hint": "Bump - Try following the Tree View",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "50",
+            "hint": "Spoiler - If you follow the Service Dependency Tree For SRVR to STREAMR, which service is customer focused?",
+            "hint_sequence": 3
+          }
+        ]
+      },
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "ITSI can incorporate business and non-infrastructure related KPI's so you can see how technical services impact business perforamnce. What are the business KPIs being used to determine customer experience?",
+        "answer_guidance": "KPI names",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Twitter Sentiment, Customer Support Cases, Customer Churn, # Active Users"
+          },
+          {
+            "match_type": "exact",
+            "answer": "Twitter Sentiment, Customer Support Cases, Customer Churn, Number Active Users"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Nudge - What part of ITSI shows all of the services that are active?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "30",
+            "hint": "Bump - Try following the Tree View",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "50",
+            "hint": "Spoiler - If you follow the Service Dependency Tree For SRVR to STREAMR, which service is customer focused?",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "Finding Infrastructure information in ITSI",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 100,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "In what cloud platform is the StreamR service located?",
+        "answer_guidance": "Where is this running?",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "GCP"
+          },
+          {
+            "match_type": "exact",
+            "answer": "Google Cloud"
+          },
+          {
+            "match_type": "exact",
+            "answer": "Google Cloud Platform"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Nudge - Try looking at the service tree again...",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "30",
+            "hint": "Spoiler - Where in the dependency tree do the techincal services look like the would be?",
+            "hint_sequence": 2
+          }
+        ]
+      },
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "Which Service in ITSI can be used to determine the cloud platform that is hosting the StreamR service?",
+        "answer_guidance": "Name of the service",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Video Delivery"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Nudge - Try looking at the service tree again...",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "30",
+            "hint": "Spoiler - Where in the dependency tree do the techincal services look like the would be?",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "Associating Entities with KPI Performance",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 300,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "The current outage appears to only be affecting a subset of customers trying to access specific content. What are the cloud regions being impacted by the outage",
+        "answer_guidance": "List the regions, in any order, all lower case",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "us-central1-a, us-west2-b, europe-west2-b"
+          },
+          {
+            "match_type": "exact",
+            "answer": "us-west2-b, us-central1-a, europe-west2-b"
+          },
+          {
+            "match_type": "exact",
+            "answer": "europe-west2-b, us-central1-a, us-west2-b"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "30",
+            "hint": "Nudge - What happens when you click on the red services in the Service Analyzer?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "90",
+            "hint": "Spoiler - It looks like only some of these services have entities",
+            "hint_sequence": 2
+          }
+        ]
+      },
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "What services within Video Delivery are in static locations within the cloud?",
+        "answer_guidance": "List the services in any order",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "GCP Edge Cache, GCP Cloud Storage"
+          },
+          {
+            "match_type": "exact",
+            "answer": "GCP Cloud Storage, GCP Edge Cache"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "30",
+            "hint": "Nudge - What happens when you click on the red services in the Service Analyzer?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "90",
+            "hint": "Spoiler - It looks like only some of these services have entities",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "Using Episode Review",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 300,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "The ITSI episode for this outage contains notable events from several sources indicating a larger issue. What is the name of the notable event that is flagged as the root cause of the episode?",
+        "answer_guidance": "Event name (copy/paste it into the answer)",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "SignalFX Detector - Cloud Function Duration Exceeding SLA"
+          },
+          {
+            "match_type": "exact",
+            "answer": "Cloud Function Duration Exceeding SLA"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "30",
+            "hint": "Nudge - What area of the Episode that shows the individual notable events?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "90",
+            "hint": "Bump - Notable Events are added to an episode based on time and other dimensions. What shows the time of events in the Episode?",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "150",
+            "hint": "Spoiler - Events Timeline",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "Using SignalFX/Metrics",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 500,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "StreamR is using Cloud Functions as a serverless infrastructure to support streaming to individual devices, which can be executed without static infrastructure to support. What is the name of the Function with the longest duration?",
+        "answer_guidance": "Function name",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "contentRequestor"
+          },
+          {
+            "match_type": "exact",
+            "answer": "contentrequestor"
+          },
+          {
+            "match_type": "exact",
+            "answer": "ContentRequestor"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Bump - Try using the \"Explore in SignalFX\" alert action in the episode from the last question",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "150",
+            "hint": "Bump - Duration is a metric data source and not an event, try searching in the srvr_metrics index",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "250",
+            "hint": "Spoiler - Use the Google Cloud Functions Overview Dashboard in SignalFX, or the Analytics Workspace in Core Splunk to look at function.duration by function",
+            "hint_sequence": 3
+          }
+        ]
+      },
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "The Splunk Add-on for GCP Allows for the collection of Cloud Monitoring data from Stackdriver and the GCP Monitoring API into a Splunk instance. Knowing that this is in your environment, What is the name of the Cloud Function with the longest duration?",
+        "answer_guidance": "Function name",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "contentRequestor"
+          },
+          {
+            "match_type": "exact",
+            "answer": "contentrequestor"
+          },
+          {
+            "match_type": "exact",
+            "answer": "ContentRequestor"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Bump - Try using the \"Explore in SignalFX\" alert action in the episode from the last question",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "150",
+            "hint": "Bump - Duration is a metric data source and not an event, try searching in the srvr_metrics index",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "250",
+            "hint": "Spoiler - Use the Google Cloud Functions Overview Dashboard in SignalFX, or the Analytics Workspace in Core Splunk to look at function.duration by function",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  }
+]

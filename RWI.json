@@ -1,0 +1,166 @@
+[
+  {
+    "question_id": "1",
+    "title": "High level understanding of RWI UI",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 100,
+    "learning_objective": "what we want them to learn",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Which country recorded the most VPN logins on 9/18/2020?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "what we want them to learn",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "United States"
+          },
+          {
+            "match_type": "exact",
+            "answer": "US"
+          },
+          {
+            "match_type": "exact",
+            "answer": "USA"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Look at the panels in various dashboards of the RWI app",
+            "hint_sequence": 1
+          }
+        ]
+      },
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "Which country recorded the most Okta logins on 9/18/2020?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "United States"
+          },
+          {
+            "match_type": "exact",
+            "answer": "US"
+          },
+          {
+            "match_type": "exact",
+            "answer": "USA"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Look at the panels in various dashboards of the RWI app",
+            "hint_sequence": 1
+          }
+        ]
+      },
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "Which device type recorded the most Zoom meetings on 9/18/2020?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "mac"
+          },
+          {
+            "match_type": "exact",
+            "answer": "OS X"
+          },
+          {
+            "match_type": "exact",
+            "answer": "apple"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Look at the panels in various dashboards of the RWI app",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "High level understanding of RWI UI",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This is a bunch of background information about the question. This will set up the scenario and what you are looking for, and might hint at the question or what they would have to do to answer. Maybe also hint at the level of difficulty for the question.",
+    "base_point_value": 100,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Which user is logging into the VPN from the city Benicia on 9/18/2020?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "froth\\bstoll"
+          },
+          {
+            "match_type": "exact",
+            "answer": "bstoll"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Is there a dashboard panel for Global Protect VPN Logins by City?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "30",
+            "hint": "Did you scroll to the bottom?",
+            "hint_sequence": 2
+          }
+        ]
+      },
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "Which user is logging into the VPN from the city Redwood City on 9/18/2020?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "froth\\bgist"
+          },
+          {
+            "match_type": "exact",
+            "answer": "bgist"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Is there a dashboard panel for Global Protect VPN Logins by City?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "30",
+            "hint": "Did you scroll to the bottom?",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  }
+]

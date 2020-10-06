@@ -1,0 +1,305 @@
+[
+  {
+    "question_id": "0",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": null,
+    "learning_objective": "what we want them to learn",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "the acutal question",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "what we want them to learn",
+        "answers": [
+          {
+            "match_type": "exact OR regex",
+            "answer": "the ans"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "how many points?",
+            "hint": "give them a hint",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "1",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 100,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "How many Kubernetes nodes are in the TMI Kubernetes Cluster?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "12"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "In Kubernetes Navigator, count how many boxes you see",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 100,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "Hover over any of the yellow nodes. What is the node�s �node condition�?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "Memory Pressure"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "Read the question carefully",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 200,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many workloads are running on tminode6?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "3"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 200,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "What is the memory limit of container tmipayment-628bq3?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "509MiB"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "Container tmipayment-628bq3 is on pod tmipayment-6",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 300,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "Which pod is consuming the most memory on tminode6?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "tmirobot-6"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "You may want to get out of the map and go to node details",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 300,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What is the memory limit for the container in tmirobot-6?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "unlimited"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "The container name is tmirobot-6vbzv",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 400,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "What workload do the tmirobot-* pods belong to?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "autobot"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 500,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "How many tmirobot-* pods are running in the TMI Kubernetes Cluster?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "6"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a container in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 600,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many tmisignalfx-agent-* are running in the TMI Kubernetes Cluster?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "12"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "title": "Signal from your Noisy Neighbor",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Have you ever had a noisey neighbor and didnt know what to do? What if that neighbor was a pod in your Kubernetes cluster running thousands of nodes? Well have no fear... Splunk Infrastructure Monitoring is here.",
+    "base_point_value": 300,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "During the rollback procedure, what happens to the tmirobot-* pod?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "It is removed"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  }
+]

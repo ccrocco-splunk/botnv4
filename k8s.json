@@ -1,0 +1,536 @@
+[
+  {
+    "question_id": "1",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Intro Scenario",
+    "base_point_value": 300,
+    "learning_objective": "Intro Scenario",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "After reading the angirly written email from StreamR's Marketing Department, you reach out to Larry (the Microservices know-it-all) on Slack to get more information. He tells you to look in the k8s_meta index because there's a namespace starting with \"tmi-\" that he believes is suspicious. What is the full name of this namespace?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Intro Scenario",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "tmi-folding"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "2",
+            "hint": "index=k8s_meta",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "5",
+            "hint": "index=k8s_meta tmi*",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "5",
+            "hint": "metadata.namespace",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Intro Scenario",
+    "base_point_value": 300,
+    "learning_objective": "Intro Scenario",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "While you're in the k8s_meta index, what's the name of the namespace most likely associated with Marketing's Website?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Intro Scenario",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "streamr-svcs"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "Who send the email, and what domain did it come from?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "index=k8s_meta | stats count by metadata.namespace",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "SC4K Data Hunting",
+    "base_point_value": 400,
+    "learning_objective": "SC4K Data Hunting",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Everything seemed to be running smoothly before StreamR's Marketing Department launched the on-sale.... Larry had verified via his synthetic checks that the environment was capable of handling increased load, though the environment is now struggling to keep up with demand. Larry asks on slack, \"How many Webfrontend pods were running before the on-sale?\" (Please answer in numerical form, eg: 42)",
+        "answer_guidance": "Please answer in numerical form, eg: 42",
+        "learning_objective": "SC4K Data Hunting",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "2"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "3",
+            "hint": "What time was the angry email sent out from StreamR's Marketing Department?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "5",
+            "hint": "status.phase=running will return the data from the running pods",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "5",
+            "hint": "Can you spot the webfrontend pods in the \"metadata.name\" field?",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "SAI Investigation",
+    "base_point_value": 700,
+    "learning_objective": "SAI Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Anxiety starts to set in. Your recent Splunk Admin Certification might not have equipped you to figure this one out. Nonsense - of course it did. We owe Larry a response back in Slack - he had asked \"What's the top CPU consuming pod-name prefix just before the Marketing email was sent out? Maybe there's something eating all the resources\" What's the answer, Ace? (answer should be the Prefix of the name ie. \"db\" for db-grijgrn4920)",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "SAI Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "fah"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "3",
+            "hint": "Check out the Splunk App for Infrastructure",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "5",
+            "hint": "There are a lot of Entities, and it'd take forever to evaluate each entity one-by-one, so lets create a Group with all of them. Select the Box on the top left of the table, and create a new group.",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "5",
+            "hint": "Drill into the group name to open the investigation for the Group. Drill into the Metrics and look for the pod CPU usage",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Intro to Container Logging w/ SC4K",
+    "base_point_value": 500,
+    "learning_objective": "Intro to Container Logging w/ SC4K",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Yes - you are on to something! You aren't familiar with the container name consuming high CPU (from question #4) and want to learn more. What is the name of the sourcetype for the logs pertaining to this container?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Intro to Container Logging w/ SC4K",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "kube:container:fah-cpu"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "k8s_logs index",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "The answer might be in the dashobard for StreamR Marketing",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in Log Files",
+    "base_point_value": 500,
+    "learning_objective": "Hunting in Log Files",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "In looking through the container logs from question 5, you start start to become interested in what \"folding\" is, and after some research you now know that this container's resources are being used to render protein dynamic simulations to help scientists better understand theraputic interactions with COVID-19. What's the team number that's receiving credit for Folding on our resources?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in Log Files",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "238889"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "Answer is in the Logs",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "Sometimes it's best to keep things simple, and just search for a string you're looking for. Right, team?",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in Log Files",
+    "base_point_value": 400,
+    "learning_objective": "Hunting in Log Files",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "And... What's the name of the user that's recieving credit for folding?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in Log Files",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "TEAM_TMI"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "Hopefully you didn't pay for this hint in the previous question... Answer is in the Logs!",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "6",
+            "hint": "| rex field=team_name mode=sed \"s/\\'//g\"",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in Log Files",
+    "base_point_value": 700,
+    "learning_objective": "Hunting in Log Files",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Looks like there's a point system used to incentivize folders. How many points have we earned over all time, according to the log data?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in Log Files",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "TBD"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "It's in - index=k8s_logs sourcetype=\"kube:container:fah-cpu\"",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "5",
+            "hint": "Could doing a string search on what we're looking for here help?",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "9",
+            "hint": "Well, you paid for it - here's a rex for exactly the field you need - | rex field=_raw \"(?<points>\\d+\\.\\d+)\\spoints\"",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Using resources outside of Spliunk to solve problem",
+    "base_point_value": 900,
+    "learning_objective": "Using resources outside of Spliunk to solve problem",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "You're all about competition - which is why you're here, of course. After googling for Folding and Home and the team number in the data you've been working with, you get real leaderboard envy. Who's at the top of the teams leaderboard?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Using resources outside of Spliunk to solve problem",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "TimTully"
+          },
+          {
+            "match_type": "",
+            "answer": "timtully"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "Having trouble with google? It's okay - we all have those days. Check out https://stats.foldingathome.org/teams",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "The Splunk Community asked the question (which is a great place to find questions/answers for pretty much anything Splunk related) - https://community.splunk.com/t5/Archive/Does-the-Splunk-Community-have-a-COVID-19-Folding-at-Home-fah/m-p/460908",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "6",
+            "hint": "The leader happens to be the CTO at Splunk (as of 10/1/2020)",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in K8s Metadata",
+    "base_point_value": 600,
+    "learning_objective": "Hunting in K8s Metadata",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "You suspect that the resource subscription from the folding container could be the culprit for email from the SteamR Marketing Department but will need to do some digging. How many folding pods were running when there were 2 StreamR Webfrontend pods running?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in K8s Metadata",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "2"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "k8s_meta index",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "Here's the filters you'll want - spec.containers{}.name=\"fah-cpu\" OR spec.containers{}.name=\"webfrontend*\" \"status.phase\"=Running",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "7",
+            "hint": "Using timechart or stats with dc will get you a table/chart to where the answer should be easily visible!",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in K8s Metadata",
+    "base_point_value": 700,
+    "learning_objective": "Hunting in K8s Metadata",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "The StreamR Webfrontend scaled up when demand surged, how many total pods were attempted to be launched during the StreamR's Marketing Event?",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in K8s Metadata",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "25"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "6",
+            "hint": "Total pods that were attempted to be launched can be Running OR Pending",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "Make sure this is in your search - spec.containers{}.name=\"fah-cpu\" OR spec.containers{}.name=\"webfrontend*\" ",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "8",
+            "hint": "... |timechart dc(metadata.name) is in your notes, maybe give that a try in your search?",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in Web Access Log Data",
+    "base_point_value": 400,
+    "learning_objective": "Hunting in Web Access Log Data",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Ace, you happen to be a subscriber to StreamR and can save money by entering the discount code from the marketing event. Hurry! Time is running out, enter the discount code here to save 50% for 6 months!!",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in Web Access Log Data",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "SRVRSIXMONHALFOFF"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "5",
+            "hint": "index=srvr_promo_events",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "7",
+            "hint": "the uri field might contain the discount code, according to your notes",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "5",
+            "hint": "Is there a discount code name that matches with the question?",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "title": "Container Contention",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Hunting in Web Access Log Data",
+    "base_point_value": 800,
+    "learning_objective": "Hunting in Web Access Log Data",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "After the folding at home pods were removed, and the webfrontend pods were able to scale up. Larry wants to check and make sure the response time is back within an acceptable range. Because you have the web data set readily accessible - what is the average response time to successfully apply the discount code, after the folding at home pods were removed? Please provide the answer in ms rounded to the nearest integar",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "Hunting in Web Access Log Data",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "3301"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "6",
+            "hint": "What web status code signifies a successful web call? Let's make sure that's in your search. And yes, it is 200",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "6",
+            "hint": "For Web Access Logs, where in the event is the Response Time located?",
+            "hint_sequence": 2
+          },
+          {
+            "hint_id": "3",
+            "hint_cost": "7",
+            "hint": "Sure - here's the rex - | rex \"(?<response_time>[\\d\\.]+)$\" ",
+            "hint_sequence": 3
+          }
+        ]
+      }
+    ]
+  }
+]

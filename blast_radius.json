@@ -1,0 +1,162 @@
+[
+  {
+    "question_id": "1",
+    "title": "a short title for your question",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Background information ....",
+    "base_point_value": null,
+    "learning_objective": "what we want them to learn",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "the acutal question",
+        "answer_guidance": "\"free hint\" or how to format, etc",
+        "learning_objective": "what we want them to learn",
+        "answers": [
+          {
+            "match_type": "exact OR regex",
+            "answer": "the ans"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          },
+          {
+            "match_type": "",
+            "answer": "optional"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "how many points?",
+            "hint": "give them a hint",
+            "hint_sequence": 1
+          }
+        ]
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the chart titled �Records Processed by Customer� and apply the correct analytic to answer the question. How many customers are processing records using this environment?",
+        "answer_guidance": "Use a \"group by\" to solve this question",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "{Count of customers}"
+          }
+        ],
+        "hints": []
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "In the same chart, apply the correct analytic to answer the question. What is the most popular method across all customers?",
+        "answer_guidance": "Use a \"group by\" to solve this question",
+        "learning_objective": "",
+        "answers": [],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "",
+    "base_point_value": null,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What is the most popular method across customers running in the �tmi-east-nyc� datacenter?",
+        "answer_guidance": "Use a \"filter\" to solve this question",
+        "learning_objective": "",
+        "answers": [],
+        "hints": []
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Your team may have received new active alerts containing the name �TMI SLA�. Which customer(s) are currently in breach of SLA?",
+        "answer_guidance": "Alerts page",
+        "learning_objective": "",
+        "answers": [],
+        "hints": []
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the \"TMI SLA\" alert of Minor Severity. What is the SLA commitment we have to this customer?",
+        "answer_guidance": "This information is in the alert configuration",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "99%"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Understanding \"Error Budgets\"",
+    "base_point_value": null,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the \"Next Steps\" link to the \"Customer Commitments\" dashboard.",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [],
+        "hints": []
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the \"TMI SLA\" alert of Major Severity. What is the SLA commitment we have to this customer?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "99.90%"
+          }
+        ],
+        "hints": []
+      },
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "",
+    "base_point_value": null,
+    "learning_objective": "",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the \"TMI SLA\" alert of Critical Severity. What is the SLA commitment we have to this customer?",
+        "answer_guidance": "",
+        "learning_objective": "",
+        "answers": [
+          {
+            "match_type": "",
+            "answer": "99.99%"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  }
+]

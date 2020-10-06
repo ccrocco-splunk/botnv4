@@ -1,0 +1,361 @@
+[
+  {
+    "question_id": "1",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "TMI App > Email",
+    "base_point_value": 500,
+    "learning_objective": "TMI App > Email",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Ace just checked his email and found that a Notable Event was resolved automatically by Phantom the night before. TMI just started using Phantom for Orchestration, Automation and Response so Ace isn't too sure what this means. Let's check out some details about what happened last night. What was the name of the notable event that kicked off a phantom playbook?",
+        "answer_guidance": "TBD",
+        "learning_objective": "TMI App > Email",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "NGINX Performance Degrading"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "ITSI",
+    "base_point_value": 250,
+    "learning_objective": "ITSI",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Ace can get a lot of information by digging into the Notable Event (NE) from Episode Review. For example, what is the name of the Notable Event Aggregation Policy (NEAP) for this event?",
+        "answer_guidance": "TBD",
+        "learning_objective": "ITSI",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Phantom Automation"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "ITSI",
+    "base_point_value": 50,
+    "learning_objective": "ITSI",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What is the field name (Filtering criteria) used to group notable events for this NEAP?",
+        "answer_guidance": "TBD",
+        "learning_objective": "ITSI",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "phantom_label"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "ITSI",
+    "base_point_value": 300,
+    "learning_objective": "ITSI",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What is the name of the correlation search for this NE?",
+        "answer_guidance": "TBD",
+        "learning_objective": "ITSI",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "NGINX_HighResponseTime_w_500Errors"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "Navigate to the list of correlation searches and find one also referencing NGINX",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "ITSI",
+    "base_point_value": 200,
+    "learning_objective": "ITSI",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "The correlation search is firing a NE when two parameters are met together. What are the two field names? (format in order of correlation search separated by a comma)",
+        "answer_guidance": "TBD",
+        "learning_objective": "ITSI",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "AvgResponseTime, ServerErrorCount"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "ITSI",
+    "base_point_value": 400,
+    "learning_objective": "ITSI",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Continuing to investigate via the different panes in the NE from Episode Review, Ace can see that this NE was successfully sent to Phantom. Which Action was executed to do so?",
+        "answer_guidance": "TBD",
+        "learning_objective": "ITSI",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "itsi_event_action_send_to_phantom"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "",
+            "hint": "Look in the Activity pane or in docs",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 500,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Ace decides to check out Phantom to further investigate. What is the name of the Phantom playbook that this NE called?",
+        "answer_guidance": "You can hyperlink directly to the Phantom event from ITSI Notable Event! (make sure you are in Analyst mode in Phantom, not summary, so you can get the full view)",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "NGINX_Remediate_Docker_Containers"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 50,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What command was run on the first Action block of the playbook?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "sudo docker ps"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 300,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Phantom Apps are bundles of Python code and other configuration files that instruct Phantom how to communicate with another device or service and command something of those other tools. Which App is being used for the first block in this playbook?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "ssh"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 200,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "If the App is how you communicate with the device or service, the actions are the commands you want to send to it. What supported action of this app is being executed?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "execute program"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 50,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "After the offending container is found, what command is run?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "sudo docker kill"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 300,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What was the name/tag of the offending container?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "0e8bc65b11ca"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 200,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What artifact is required to run this command on the offending container?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "hostname"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "14",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 600,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "If this playbook successfully creates a new docker image, it reports back to ITSI that it was successful and updates the NE to Resolved. Ace notices that there is not an action for if that fails. He wants to create a new action block to update the episode to Pending if container creation fails. What is the app and action required to set this up? (In format App > Action",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Splunk IT Service Intelligence > update episode"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "15",
+    "title": "OAR Questions",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Phantom",
+    "base_point_value": 500,
+    "learning_objective": "Phantom",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Now that Ace has a good understanding of what the playbook is doing, he switches back to the phantom event. What was the last action executed on this event?",
+        "answer_guidance": "TBD",
+        "learning_objective": "Phantom",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "SetEpisodeResolved"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  }
+]

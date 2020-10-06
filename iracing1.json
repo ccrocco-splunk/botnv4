@@ -1,0 +1,950 @@
+[
+  {
+    "question_id": "1",
+    "title": "Introduction",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Click on the YouTube link provided to you to watch the introduction video",
+    "base_point_value": 100,
+    "learning_objective": "Narration",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What Racing Platform was used for the Virtual Race 2 .conf?",
+        "answer_guidance": "Refer to the video",
+        "learning_objective": "Narration",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "iRacing Platform"
+          },
+          {
+            "match_type": "exact",
+            "answer": "iracing platform"
+          },
+          {
+            "match_type": "exact",
+            "answer": "iracing"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "It is the racing simulator referenced in the YouTube video",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "Introduction",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 100,
+    "learning_objective": "Narration",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "For the data set being used for the BOTN, where did we race?",
+        "answer_guidance": "Refer to the video",
+        "learning_objective": "Narration",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Tsukuba Circuit"
+          },
+          {
+            "match_type": "exact",
+            "answer": "Tsukuba"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "Starts with a T but sounds like it starts with a S",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "Introduction",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 100,
+    "learning_objective": "Narration",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "For the data set being used for the BOTN, when was the race?",
+        "answer_guidance": "Refer to the video",
+        "learning_objective": "Narration",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "August 3rd 2020"
+          },
+          {
+            "match_type": "exact",
+            "answer": "8/3/20"
+          },
+          {
+            "match_type": "Exact",
+            "answer": "3-Aug-20"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "MM/DD/YYYY format",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "Introduction",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 100,
+    "learning_objective": "Narration",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What was the format for the event? (What are the 3 segments)",
+        "answer_guidance": "Refer to the video",
+        "learning_objective": "Narration",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Practice, Qualifying, Race"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "The three segments Cory referenced in the video",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "Introduction",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 100,
+    "learning_objective": "Narration",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What time should the race have started",
+        "answer_guidance": "Refer to the video",
+        "learning_objective": "Narration",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "17:30 ET"
+          },
+          {
+            "match_type": "",
+            "answer": "5:30 ET"
+          },
+          {
+            "match_type": "",
+            "answer": "5:30"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "Times are in ET",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "title": "Let's Look Under The Hood",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "Let's get familiar with the data we collected for our VR2C. First, go to the BOTN - VR2C App in Splunk and explore the data",
+    "base_point_value": 200,
+    "learning_objective": "Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many total events are there in the iracing index?",
+        "answer_guidance": "Looking for all the events in this index",
+        "learning_objective": "Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "189626"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Set Time Picker to All Time",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "title": "Let's Look Under The Hood",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Change the Time Picker to only show events related to the Tsukiba Race, how many events are there?",
+        "answer_guidance": "Looking for only the events that were apart of the race portion of Tsukuba",
+        "learning_objective": "Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "57622"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Set Time Picker to Tsukuba Race",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "title": "Let's Look Under The Hood",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Add the \"normalisedrace\" source to your search. How many events are there now?",
+        "answer_guidance": "Search will include events from only one source",
+        "learning_objective": "Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "55053"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Sources are found in Selected Fields",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "9",
+    "title": "Let's Look Under The Hood",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many hosts are sending data?",
+        "answer_guidance": "host is a selected field",
+        "learning_objective": "Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "13"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Use the same search as before",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "10",
+    "title": "Let's Look Under The Hood",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 300,
+    "learning_objective": "Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Which host had the most events?",
+        "answer_guidance": "Which host has the top value",
+        "learning_objective": "Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Intel"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "75",
+            "hint": "Click on the host field",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "11",
+    "title": "Let's Look Under The Hood",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 500,
+    "learning_objective": "Investigation",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many fields are there?",
+        "answer_guidance": "Use seach, dont count the fields",
+        "learning_objective": "Investigation",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "98"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "100",
+            "hint": "fieldsummary is the command",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "12",
+    "title": "I've got a need, a need for Speed!",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "For this section we are going to explore what everyone wants to know... how fast did everyone go and is that important? You will be using the same base search and time picker from the previous section",
+    "base_point_value": 300,
+    "learning_objective": "Speed",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What was the top speed reached during the race?",
+        "answer_guidance": "Speed is in MPH",
+        "learning_objective": "Speed",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "135 MPH"
+          },
+          {
+            "match_type": "Exact",
+            "answer": "135"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "75",
+            "hint": "The Stats Command is your friend",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "100",
+            "hint": "You are looking for Max speed",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "13",
+    "title": "I've got a need, a need for Speed!",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 300,
+    "learning_objective": "Speed",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Which racer had the fastest speed (rounded to the nearest integer)?",
+        "answer_guidance": "Each host was a racer and there might be more than 1",
+        "learning_objective": "Speed",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Cory"
+          },
+          {
+            "match_type": "Exact",
+            "answer": "McLaren 1"
+          },
+          {
+            "match_type": "Exact",
+            "answer": "Splunk 3"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "75",
+            "hint": "From your previous seach which host posted the fastes speed?",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "50",
+            "hint": "By the Stats to the Max",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "14",
+    "title": "I've got a need, a need for Speed!",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 300,
+    "learning_objective": "Speed",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What was the average speed for the race? (Round to the nearest integer)",
+        "answer_guidance": "Looking for the total average speed",
+        "learning_objective": "Speed",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "63 MPH"
+          },
+          {
+            "match_type": "Exact",
+            "answer": "63"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "75",
+            "hint": "Eval can help Round",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "50",
+            "hint": "Avg works with Stats",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "15",
+    "title": "I've got a need, a need for Speed!",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 400,
+    "learning_objective": "Speed",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Which Racer had the fastest average speed?",
+        "answer_guidance": "Each host was a racer and there might be more than 1",
+        "learning_objective": "Speed",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "McLaren 1"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "80",
+            "hint": "host is a clause for your first command",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "50",
+            "hint": "Use the Stats",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "16",
+    "title": "Rubbin' is Racing, how much damage did we cause?",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "For this section we are going to explore how good the racees actually were. We are going to look at how much damage they caused and the effect on the race. You will be using the same base search and time picker from the previous section",
+    "base_point_value": 400,
+    "learning_objective": "Damage",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "What was the total amount of Incident points in the race?",
+        "answer_guidance": "Incident points are found in the PlayerCarMyIncidentCount field",
+        "learning_objective": "Damage",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "226"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "80",
+            "hint": "You will need to find out how many incident points each host got and then add them together",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "50",
+            "hint": "addcoltotals will help you not have to do math",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "17",
+    "title": "Rubbin' is Racing, how much damage did we cause?",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 300,
+    "learning_objective": "Damage",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Which Racer had the most incident points",
+        "answer_guidance": "We are looking for most incident points at the end of the race",
+        "learning_objective": "Damage",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Intel"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "75",
+            "hint": "Look for the max number for each host",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "50",
+            "hint": "do not sum a host's incident points",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "18",
+    "title": "Rubbin' is Racing, how much damage did we cause?",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 300,
+    "learning_objective": "Damage",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Who had the least incident points?",
+        "answer_guidance": "We are looking for who had the least incident points at the end of the race",
+        "learning_objective": "Damage",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Splunk 4"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "75",
+            "hint": "You can run the same search as the last question and take the opposite",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "19",
+    "title": "Rubbin' is Racing, how much damage did we cause?",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 500,
+    "learning_objective": "Damage",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many Pit Stops were there in the Race?",
+        "answer_guidance": "Assume pit stops take 3 minutes so events should be grouped in 3 min intervals",
+        "learning_objective": "Damage",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "21"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "100",
+            "hint": "Transaction Command in 3 min intervals will bucket pitstops",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "",
+            "hint": "PlayerCarInPitStop = True is a pit stop",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "20",
+    "title": "Rubbin' is Racing, how much damage did we cause?",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 500,
+    "learning_objective": "Damage",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Fast repairs accelerate the repair time in the pit. The amount of fast repairs arent unlimited. Who used the most during the race?",
+        "answer_guidance": "Dont sum the fast repairs, look for the number each racer has at the end of the race",
+        "learning_objective": "Damage",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Red River 2"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "100",
+            "hint": "Stats by host is needed",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "150",
+            "hint": "latest arguement is needed with stats",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "21",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "For this section we will use both the VR2C Dashboard and Search in Splunk to see who the race winner is and explore some data points to show why the winner won",
+    "base_point_value": 100,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Navigate to the VR2C Dashboard. Who won the race?",
+        "answer_guidance": "Use the dashboard in the BOTN-VR2C App",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Cory"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "Dashboards are located on the App Ribbon",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "22",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Go back to the search tab in the BOTN-VR2C App. Using the same index, source and time range as the previous sections, How many laps did the race winner complete?",
+        "answer_guidance": "Use the winner as the host in your search",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "33"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Dont sum the laps, look for the max laps",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "50",
+            "hint": "Stats is the best command",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "23",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 100,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Navigate to the VR2C Dashboard. What was the fastest lap time (provide the exact value to the thousandth of a second)?",
+        "answer_guidance": "Use the dashboard in the BOTN-VR2C App",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "54.985"
+          },
+          {
+            "match_type": "",
+            "answer": "55"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "Dashboards are located on the App Ribbon",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "24",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 400,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Who got the fastest lap time of the race?",
+        "answer_guidance": "Open the panel from the previous question in search and use that as your baseline",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Splunk 3"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "80",
+            "hint": "Add the host clause to the stats command",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "25",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Having the fastest lap is nice but consistancy is critical for racing. Who had the fastest average lap time? Navigate to the VR2C Dashboard and check it out!",
+        "answer_guidance": "Use the dashboard in the BOTN-VR2C App",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Splunk 3"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "The bar chart with the smallest bar is the answer",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "29",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "No one wants to run out of fuel. Who was the closest?",
+        "answer_guidance": "Navigate to the VR2C dashboard and look for who had the lowest fuel level at the end of the race.",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Westy"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "The lowest number is the right number",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "27",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 200,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Winning isnt everything... Most Improved is pretty important too. Navigate to the VR2C Dashboard to see who had the most improved placement from their start time to finish",
+        "answer_guidance": "Look at the poll position of where people started and where they finished",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "McLaren 1"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "50",
+            "hint": "Look for the biggest difference in poll positions",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "28",
+    "title": "If you ain't first, your last.",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "same as above",
+    "base_point_value": 600,
+    "learning_objective": "Conclusion",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Open the Poll Start and Finish panel in search. Apply an eval command to get the delta of everyone's poll placements from Start to Finish. What is the average Delta?",
+        "answer_guidance": "Round to 2 decimal places",
+        "learning_objective": "Conclusion",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "-0.15"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "100",
+            "hint": "Start - Finish = Delta",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "150",
+            "hint": "Stats and Avg is like Peanut Butter and Jelly",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  }
+]

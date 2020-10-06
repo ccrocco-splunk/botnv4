@@ -1,0 +1,228 @@
+[
+  {
+    "question_id": "1",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 100,
+    "learning_objective": "ITSI Service Analyzer and deep dive",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "What KPI degraded to critical state first within the M74:ABAP:IDOCs Service",
+        "answer_guidance": "Include all characters from the KPI",
+        "learning_objective": "ITSI Service Analyzer and deep dive",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "SAP-IG-WE02:IdocsFailedUnique(%)"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "Use a deep dive",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "2",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 100,
+    "learning_objective": "ITSI Service Analyzer and deep dive",
+    "phrasings": [
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "How many KPIs went into critical state concurrently on service M74:ABAP:IDOCs",
+        "answer_guidance": "Use numbers to answer e.g. 8 not eight",
+        "learning_objective": "ITSI Service Analyzer and deep dive",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "7"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "25",
+            "hint": "Use a deep dive",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "3",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 100,
+    "learning_objective": "ITSI Service Analyzer",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "Name the degraded pseudo entity for Service M74:ABAP:IDOCs KPI:SAP-IG-WE02:IdocFailures at the time of 2AM",
+        "answer_guidance": "",
+        "learning_objective": "ITSI Service Analyzer",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "Outbox"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Use the service analyzer",
+            "hint_sequence": 1
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "4",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 150,
+    "learning_objective": "ITSI Deep dive",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "At what time did the Service M74:ABAP:TRFC (aka the Queueing service) breach 1000 failed Remote Function Calls",
+        "answer_guidance": "Round to the nearest five minutes and include am/pm e.g. 1:16 am would be 01:15 am",
+        "learning_objective": "ITSI Deep dive",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "12:25 AM"
+          },
+          {
+            "match_type": "",
+            "answer": "12:30 AM"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "5",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 150,
+    "learning_objective": "SPL and SAP data format and contents",
+    "phrasings": [
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "SAP Systems send JSON data and self identify by putting the SAP Instance system name into the source field. How many SAP systems sent data?",
+        "answer_guidance": "Use numbers to answer e.g. 8 not eight",
+        "learning_objective": "SPL and SAP data format and contents",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "3"
+          }
+        ],
+        "hints": [
+          {
+            "hint_id": "1",
+            "hint_cost": "10",
+            "hint": "Data is in the sap index",
+            "hint_sequence": 1
+          },
+          {
+            "hint_id": "2",
+            "hint_cost": "20",
+            "hint": "Only include sources in JSON format",
+            "hint_sequence": 2
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "question_id": "6",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 100,
+    "learning_objective": "ITSI",
+    "phrasings": [
+      {
+        "phrasing_id": "1",
+        "question_phrasing": "How many KPIs are in the M74:ABAP:DB_Oracle Service Node?",
+        "answer_guidance": "Use numbers to answer e.g. 8 not eight",
+        "learning_objective": "ITSI",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "37"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "7",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 100,
+    "learning_objective": "ITSI Service Analyzer",
+    "phrasings": [
+      {
+        "phrasing_id": "2",
+        "question_phrasing": "What is the name of the root SAP Instance that is experiencing stability issues?",
+        "answer_guidance": "Include all the characters in the answer",
+        "learning_objective": "ITSI Service Analyzer",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "SAP:M74:ABAP"
+          },
+          {
+            "match_type": "",
+            "answer": "M74"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  },
+  {
+    "question_id": "8",
+    "title": "SAP Service Insights",
+    "description": "we don't use description, I wonder where this shows up?",
+    "background": "This scenario uses ITSI SAP Service Intelligence to automatically build SAP services and KPIs to monitor SAP via PowerConnect",
+    "base_point_value": 150,
+    "learning_objective": "ITSI Service Analyzer and deep dive",
+    "phrasings": [
+      {
+        "phrasing_id": "3",
+        "question_phrasing": "What is the maximum value for the KPI\nSAP-IG-WE02:IdocsFailedUnique?",
+        "answer_guidance": "Use numbers to answer e.g. 8 not eight",
+        "learning_objective": "ITSI Service Analyzer and deep dive",
+        "answers": [
+          {
+            "match_type": "exact",
+            "answer": "41"
+          }
+        ],
+        "hints": []
+      }
+    ]
+  }
+]
